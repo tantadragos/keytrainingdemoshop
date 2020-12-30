@@ -8,13 +8,12 @@
     "npm": "6.9.0"
   },
   "scripts": {
-    "start": "node server/index.js",
-    "build-front": "cd client && npm install",
-    "build-back": "cd server && npm install",
-    "build": "cd client && npm run build && cd ../server && npm run build",
-    "backend": "nodemon server/index.js",
+    "start": "node index.js",
+    "build": "cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "backend": "nodemon index.js",
     "frontend": "npm run front --prefix client",
-    "heroku-postbuild":"npm run build-front && npm run build-back && npm run build",
+    "heroku-postbuild":"npm run install-client && npm run build",
     "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
   "author": "John ahn",
