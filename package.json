@@ -8,12 +8,13 @@
     "npm": "6.9.0"
   },
   "scripts": {
-    "build": "cd client && npm run build",
-    "install-client": "cd client && npm install",
     "backend": "nodemon index.js",
     "frontend": "npm run front --prefix client",
-    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
+    "build":"cd client && npm run build",
+    "install-client": "cd client && npm install",
+    "heroku-postbuild":"npm run install-client && npm run build",
     "start": "node index.js",
+    "client": "cd client && npm start",
     "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
   "author": "",
