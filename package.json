@@ -12,7 +12,7 @@
     "install-client": "cd client && npm install",
     "backend": "nodemon index.js",
     "frontend": "npm run front --prefix client",
-    "heroku-postbuild":"npm run install-client && npm run build",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build",
     "start": "node index.js",
     "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
