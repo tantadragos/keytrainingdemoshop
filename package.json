@@ -16,7 +16,7 @@
     "heroku-postbuild":"npm run install-client && npm run build",
     "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
-  "author": "John ahn",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "async": "^3.1.0",
