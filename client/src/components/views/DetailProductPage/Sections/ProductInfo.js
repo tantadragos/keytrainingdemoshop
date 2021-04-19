@@ -22,7 +22,7 @@ function ProductInfo(props) {
                 <Descriptions.Item label="Price"> {Product.price}</Descriptions.Item>
                 <Descriptions.Item label="Sold">{Product.sold}</Descriptions.Item>
                 <Descriptions.Item label="View"> {Product.views}</Descriptions.Item>
-                 <Descriptions.Item label="Rating"> {Product.rating}</Descriptions.Item>
+                 <Descriptions.Item label="Rating"> {}</Descriptions.Item>
                 <Descriptions.Item label=""> {}</Descriptions.Item>
                 <Descriptions.Item label=""> {}</Descriptions.Item>
                 <Descriptions.Item label="Description"> {Product.description}</Descriptions.Item>
