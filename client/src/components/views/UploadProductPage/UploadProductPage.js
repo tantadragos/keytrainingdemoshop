@@ -22,6 +22,7 @@ function UploadProductPage(props) {
     const [DescriptionValue, setDescriptionValue] = useState("")
     const [PriceValue, setPriceValue] = useState(0)
     const [ContinentValue, setContinentValue] = useState(1)
+    const [RatingValue, setRatingValue] = useState("")
 
     const [Images, setImages] = useState([])
 
@@ -29,7 +30,10 @@ function UploadProductPage(props) {
     const onTitleChange = (event) => {
         setTitleValue(event.currentTarget.value)
     }
-
+    
+    const onRatingChange = (event) => {
+        setRatingValue(event.currentTarget.value)
+    } 
     const onDescriptionChange = (event) => {
         setDescriptionValue(event.currentTarget.value)
     }
@@ -57,6 +61,7 @@ function UploadProductPage(props) {
         const variables = {
             writer: props.user.userData._id,
             title: TitleValue,
+            rating: RatingValue,
             description: DescriptionValue,
             price: PriceValue,
             images: Images,
@@ -93,6 +98,13 @@ function UploadProductPage(props) {
                 <Input
                     onChange={onTitleChange}
                     value={TitleValue}
+                />
+                <br />
+                <br />
+                 <label>Rating</label>
+                <Input
+                    onChange={onRatingChange}
+                    value={RatingValue}
                 />
                 <br />
                 <br />
