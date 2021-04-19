@@ -10,6 +10,10 @@ const productSchema = mongoose.Schema({
         type: String,
         maxlength: 50
     },
+    rating: {
+        type: String,
+        maxlength: 50
+    },
     description: {
         type: String
     },
@@ -39,6 +43,7 @@ const productSchema = mongoose.Schema({
 
 productSchema.index({ 
     title:'text',
+     rating:'text',
     description: 'text',
 }, {
     weights: {
