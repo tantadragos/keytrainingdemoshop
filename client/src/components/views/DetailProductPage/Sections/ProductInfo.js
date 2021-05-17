@@ -37,6 +37,11 @@ function ProductInfo(props) {
                 >
                     Add to Cart
                     </Button>
+                        <Button size="large" shape="round" type="warrning"
+                    onClick={addToCarthandler}
+                >
+                    Increase Quantity
+                    </Button>
             </div>
         </div>
     )
