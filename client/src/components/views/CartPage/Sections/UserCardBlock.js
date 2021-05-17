@@ -20,7 +20,7 @@ function UserCardBlock(props) {
                     src={renderCartImage(product.images)} />
                 </td> 
                 <td>{product.quantity} QTY <td><button 
-                onClick={()=> props.addToCarthandler(product._id)}
+                onClick={()=> props.addToCart(productId)}
                 >Increase QTY </button> </td></td>
                 <td>$ {product.price} </td>
                 <td><button 
