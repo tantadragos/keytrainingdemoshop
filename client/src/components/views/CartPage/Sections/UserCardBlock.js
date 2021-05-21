@@ -10,6 +10,9 @@ function UserCardBlock(props) {
             return `/${image}`
         }
     }
+    function multiplyNumbers(x,y){
+        return x*y;
+    }
 
     const renderItems = () => (
         props.products && props.products.map(product => (
@@ -20,7 +23,7 @@ function UserCardBlock(props) {
                     src={renderCartImage(product.images)} />
                 </td> 
                 <td>{product.quantity} QTY </td>
-                <td>$ {product.price} x {product.quantity} </td>
+                <td>$ {multiplyNumbers(product.price, product.quantity)}</td>
                 <td><button 
                 onClick={()=> props.removeItem(product._id)}
                 >Remove </button> </td>
