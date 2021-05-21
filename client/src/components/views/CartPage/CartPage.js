@@ -95,8 +95,8 @@ function CartPage(props) {
                 {ShowTotal ?
                     <div style={{ marginTop: '3rem' }}>
                         <h2>Product: ${Total}</h2>
-                  /*      <h2>Shipping: $ 200</h2>
-                        <h2>Total amount: ${max} </h2>     */               </div>
+                       <h2>Shipping: $ 200</h2>
+                        <h2>Total amount: ${max} </h2>              </div>
                     :
                     ShowSuccess ?
                         <Result
