@@ -20,7 +20,7 @@ function UserCardBlock(props) {
                     src={renderCartImage(product.images)} />
                 </td> 
                 <td>{product.quantity} QTY </td>
-                <td>$ {product.price x product.quantity} </td>
+                <td>$ {product.price} x {product.quantity} </td>
                 <td><button 
                 onClick={()=> props.removeItem(product._id)}
                 >Remove </button> </td>
