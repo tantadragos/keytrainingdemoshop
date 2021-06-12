@@ -14,7 +14,7 @@ function CartPage(props) {
     const [Total, setTotal] = useState(0)
     const [ShowTotal, setShowTotal] = useState(false)
     const [ShowSuccess, setShowSuccess] = useState(false)
-    const max = Total +200
+    const max = Total +300
 
     useEffect(() => {
 
@@ -88,7 +88,7 @@ function CartPage(props) {
 
                 <UserCardBlock
                     products={props.user.cartDetail}
-                    removeItem={removeFromCart}//{removeFromCart}
+                    removeItem={transactionSuccess}// Bug 1 -- > {removeFromCart}
                 />
 
 
