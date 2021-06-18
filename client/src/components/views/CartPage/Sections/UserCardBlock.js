@@ -28,9 +28,7 @@ function UserCardBlock(props) {
                     <img style={{ width: '70px' }} alt="product" 
                     src={renderCartImage(product.images)} />
                 </td> 
-                <td>{product.quantity} QTY 
-                    <button onClick={()=> product.quantity=product.quantity-1}> Add Qty- </button> 
-                    <button onClick={()=> product.quantity=product.quantity+1}> Decrease Qty </button> 
+                <td>{product.quantity} QTY
                     </td>
                 <td>$ {multiplyNumbers(product.price, product.quantity)}</td>
                 <td><button 
