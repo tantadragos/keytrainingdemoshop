@@ -19,8 +19,8 @@ function DetailProductPage(props) {
     }, [])
 
     const addToCartHandler = (productId) => {
-       // dispatch(addToCart(productId))
-       dispatch(addToCart("609e84847f15e351d6703486"))
+       dispatch(addToCart(productId))
+      // dispatch(addToCart("609e84847f15e351d6703486"))
     }
 
     return (
