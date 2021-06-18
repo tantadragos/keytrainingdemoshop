@@ -37,7 +37,7 @@ const price = [
     }
     ,
     {
-        "_id": 6,
+        "_id": 7,
         "name": "More than $6000",
         "array": [6000, 150000]
     }
