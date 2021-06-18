@@ -30,7 +30,7 @@ function UserCardBlock(props) {
                 </td> 
                 <td>{product.quantity} QTY 
                     <button onClick={()=> product.quantity=product.quantity-1}> - </button> 
-                    <button onClick={()=> product.quantity=product.quantity+1)}> + </button> 
+                    <button onClick={()=> product.quantity=product.quantity+1}> + </button> 
                     </td>
                 <td>$ {multiplyNumbers(product.price, product.quantity)}</td>
                 <td><button 
