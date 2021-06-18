@@ -13,6 +13,12 @@ function UserCardBlock(props) {
     function multiplyNumbers(x,y){
         return x*y;
     }
+        function addNumbers(x,y){
+        return x+y;
+    }
+        function decereaseNumbers(x,y){
+        return x-y;
+    }
 
     const renderItems = () => (
         props.products && props.products.map(product => (
@@ -22,7 +28,10 @@ function UserCardBlock(props) {
                     <img style={{ width: '70px' }} alt="product" 
                     src={renderCartImage(product.images)} />
                 </td> 
-                <td>{product.quantity} QTY </td>
+                <td>{product.quantity} QTY 
+                    <button onClick={()=> product.quantity=product.quantity-1}> - </button> 
+                    <button onClick={()=> product.quantity=product.quantity+1)}> + </button> 
+                    </td>
                 <td>$ {multiplyNumbers(product.price, product.quantity)}</td>
                 <td><button 
                 onClick={()=> props.removeItem(product._id)}
