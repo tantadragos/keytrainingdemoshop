@@ -88,7 +88,7 @@ function CartPage(props) {
 
                 <UserCardBlock
                     products={props.user.cartDetail}
-                    removeItem={transactionSuccess}// Bug 1 -- > {removeFromCart}
+                    removeItem={removeFromCart}// Bug 1 -- > {removeFromCart}
                 />
 
 
