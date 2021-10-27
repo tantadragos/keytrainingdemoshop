@@ -44,7 +44,7 @@ function UserCardBlock(props) {
             <table>
                 <thead>
                     <tr>
-
+                        <th>Product Name</th>
                         <th>Product Image</th>
                         <th>Product Quantity</th>
                         <th>Product Price</th>
